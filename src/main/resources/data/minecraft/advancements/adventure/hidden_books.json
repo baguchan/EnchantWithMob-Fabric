@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:adventure/voluntary_exile",
+  "display": {
+    "icon": {
+      "item": "enchantwithmob:mob_enchant_book"
+    },
+    "title": {
+      "translate": "advancements.adventure.hidden_books.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.hidden_books.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enchantwithmob:mob_enchant_book"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "book"
+    ]
+  ]
+}

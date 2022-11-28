@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 0.0,
+        "max": 2.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchantwithmob:mob_enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 20.0,
+                "max": 40.0
+              },
+              "treasure": true
+            }
+          ],
+          "name": "enchantwithmob:mob_enchant_book"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "enchantwithmob:mob_enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 10.0,
+                "max": 40.0
+              },
+              "treasure": true
+            }
+          ],
+          "name": "enchantwithmob:enchanters_book"
+        }
+      ]
+    }
+  ]
+}

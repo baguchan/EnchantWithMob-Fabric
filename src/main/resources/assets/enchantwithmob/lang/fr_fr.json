@@ -1,0 +1,16 @@
+{
+  "item.enchantwithmob.enchanter_spawn_egg": "Oeuf d'apparition d'enchanteur",
+  "item.enchantwithmob.mob_enchant_book": "Livre d'enchantement de monstre",
+  "entity.enchantwithmob.enchanter": "Enchanteur",
+  "mobenchant.enchantwithmob.name.enchantwithmob.protection": "Protection",
+  "mobenchant.enchantwithmob.name.enchantwithmob.strong": "Fort",
+  "mobenchant.enchantwithmob.name.enchantwithmob.speedy": "Rapide",
+  "mobenchant.enchantwithmob.name.enchantwithmob.thorn": "Épine",
+  "mobenchant.enchantwithmob.name.enchantwithmob.health_boost": "Boost de Santée",
+  "advancements.adventure.hidden_books.title": "Livres cachés",
+  "advancements.adventure.hidden_books.description": "Volez le livre d'un enchanteur",
+  "mobenchant.enchantwithmob.when_ehcnanted": "Une fois enchanté",
+  "enchantwithmob.config.naturalSpawnEnchantedMob": "Apparition naturelle de monstres enchantés",
+  "enchantwithmob.config.spawnEnchantedAnimal": "Faire apparaitre des animaux enchantés",
+  "enchantwithmob.config.enchantedBoss": "Boss enchanté"
+}
