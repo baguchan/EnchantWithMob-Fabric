@@ -10,7 +10,7 @@ public class ModRegistry {
 	public static final Registry<MobEnchant> MOB_ENCHANT;
 
 	static {
-		MOB_ENCHANT = FabricRegistryBuilder.createDefaulted(MobEnchant.class, new ResourceLocation(EnchantWithMob.MODID, "mob_enchant"), new ResourceLocation(EnchantWithMob.MODID, "protect")).buildAndRegister();
+		MOB_ENCHANT = FabricRegistryBuilder.createDefaulted(MobEnchant.class, new ResourceLocation(EnchantWithMob.MODID, "mob_enchant"), new ResourceLocation(EnchantWithMob.MODID, "protection")).buildAndRegister();
 	}
 
 	public static void init() {

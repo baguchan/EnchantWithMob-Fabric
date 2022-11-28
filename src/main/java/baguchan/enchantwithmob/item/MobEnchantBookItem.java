@@ -2,12 +2,12 @@ package baguchan.enchantwithmob.item;
 
 import baguchan.enchantwithmob.api.IEnchantCap;
 import baguchan.enchantwithmob.mobenchant.MobEnchant;
+import baguchan.enchantwithmob.registry.ModItems;
 import baguchan.enchantwithmob.registry.ModRegistry;
 import baguchan.enchantwithmob.utils.MobEnchantUtils;
 import com.google.common.collect.Lists;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.ChatFormatting;
-import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.network.chat.Component;
@@ -27,6 +27,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -96,14 +97,14 @@ public class MobEnchantBookItem extends Item {
 		return super.use(level, playerIn, handIn);
 	}
 
-	@Override
-	public void fillItemCategory(CreativeModeTab p_41391_, NonNullList<ItemStack> p_41392_) {
-		if (this.allowedIn(p_41391_)) {
-			for (MobEnchant enchant : ModRegistry.MOB_ENCHANT.stream().toList()) {
-				ItemStack stack = new ItemStack(this);
-				MobEnchantUtils.addMobEnchantToItemStack(stack, enchant, enchant.getMaxLevel());
-				p_41392_.add(stack);
-			}
+	public static void generateMobEnchantmentBookTypesOnlyMaxLevel(CreativeModeTab.Output output, CreativeModeTab.TabVisibility tabVisibility) {
+		Iterator var3 = ModRegistry.MOB_ENCHANT.iterator();
+
+		while (var3.hasNext()) {
+			MobEnchant enchantment = (MobEnchant) var3.next();
+			ItemStack stack = new ItemStack(ModItems.MOB_ENCHANT_BOOK);
+			MobEnchantUtils.addMobEnchantToItemStack(stack, enchantment, enchantment.getMaxLevel());
+			output.accept(stack, tabVisibility);
 		}
 	}
 

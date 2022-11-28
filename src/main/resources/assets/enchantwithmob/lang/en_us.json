@@ -35,5 +35,6 @@
   "enchantwithmob.config.enchantYourSelf": "Enchant YourSelf",
   "enchantwithmob.config.changeSizeWhenEnchant": "Change Size When Enchant",
   "enchantwithmob.config.dungeonsLikeHealth": "Dungeons Like Health",
-  "death.attack.enchantwithmob.indirectVoid": "%1$s was wrapped in void by %2$s"
+  "death.attack.enchantwithmob.indirectVoid": "%1$s was wrapped in void by %2$s",
+  "itemGroup.enchantwithmob.general": "MobEnchants"
 }
